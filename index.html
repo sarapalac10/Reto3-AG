@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>Calculadora IMC - Índice de Masa Corporal</title>
+</head>
+
+<body>
+    <header>
+        <h1>CALCULADORA IMC</h1>
+    </header>
+    <br>
+    <h2>Descubra su índice de masa corporal</h2>
+    
+    <form>
+        <input type="radio" name="sexo" id="hombre" value="h" />
+        <span class="material-icons">man</span> | 
+        <input type="radio" name="sexo" id="mujer" value="m" />
+        <span class="material-icons">woman</span> <br> <br>
+            
+        <label for="age">Edad </label> <input type="number" id="user-age" />
+        <br> <br>
+
+        <label for="weight">Peso</label> <input type="number" id="user-weight" /> <label class="green-text">Kg</label>
+        
+        <br> <br>
+
+        <label for="height">Altura</label> <input type="number" id="user-height" /> <label class="green-text">m</label>
+        
+        <br> <br>
+
+        <input type="button" id="boton-enviar" onclick="crearRegistro()" value="Enviar">
+        
+                
+    </form> 
+    <br> <br>
+
+    <div class="container">
+        <table class="table table-hover" id="tablaResultados">
+            <thead>
+                <tr>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>IMC</th>
+                    <th>Clasificación</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+<script src="js/interfaz.js"></script>
+<script src="js/calculo.js"> </script>
+   
+<footer>
+    <img src="img/img1.jpg" alt="clasificación de imc" >
+</footer>
+</body>
+</html>
